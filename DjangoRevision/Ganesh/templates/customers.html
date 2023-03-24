@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    {% for i in detailes %}
+        <p>{{i.0}} {{i.1}} {{i.2}} {{i.3}}</p>
+    {% endfor %}-->
+    <center>
+        <form action="" method="POST">
+            {% csrf_token %}
+        Enter customerid: <input type="text" name="custid">
+        <input type="submit" value="submit">
+        </form>
+        {% for i in detailes %}
+        <p>CustomerID:{{i.0}}</p>
+        <p>CustomerName:{{i.1}}</p>
+        <p>CustomerLocation:{{i.2}}</p>
+        <p>CustomerAge:{{i.3}}</p>
+        {% endfor %}
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="">Enter Employee ID</label><br>
+            <input type="text" name="empid"><br><br>
+            
+            <label for="">Enter Employee Name</label><br>
+            <input type="text" name="empname"><br><br>
+            
+            <label for="">Enter Employee Age</label><br>
+            <input type="text" name="empage"><br><br>
+
+            <label for="">Enter Employee Salary</label><br>
+            <input type="text" name="empsal"><br><br>
+            
+            <label for="">Enter Employee Dept No</label><br>
+            <input type="text" name="empdeptno"><br><br>
+            
+            <label for="">Enter Employee Dept Name</label><br>
+            <input type="text" name="empdeptname"><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>

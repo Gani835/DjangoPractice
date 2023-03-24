@@ -1,0 +1,30 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <center>
+        <h1>Student Information</h1>
+        <table border="2">
+            <tr>
+                <td>Number</td>
+                <td>Name</td>
+                <td>Maks</td>
+            </tr>
+            {% for i in stud %}
+            <tr>
+                <td>{{i.number}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.marks}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
